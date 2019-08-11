@@ -1,7 +1,8 @@
 # Nidoc
 
-Documentation is [here](https://nivite.github.io/nidoc)
+For [Documentation](https://nivite.github.io/nidoc) on nivite.jrvite.com only
 
+<!---
 #### angular-cli reference
 ```sh
 ng new nidoc --style scss --prefix n3
@@ -18,3 +19,4 @@ ng g c components/trackrsvp
 ng g c components/sharephotos
 
 ```
+-->
