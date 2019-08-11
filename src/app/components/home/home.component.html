@@ -1,0 +1,23 @@
+<div class="jumbotron bg-white">
+  <h1 class="display-4 text-primary">Nivite</h1>
+  <p class="lead text-secondary">Create invitations, the nerdy way. </p>
+  <a class="btn btn-success btn-lg" routerLink="/firebaseinit" role="button">Get started</a>
+</div>
+<h3 class="pt-3">Why</h3>
+<p>Once up on a time, a <i>nerd</i> became a <i>dad</i> of a lovely girl. This <i>nerdad</i> wished to
+  celebrate her birthdays, in <strong>the most special</strong> way possible, starting from the invitations to bu-bye
+  for the last guest. </p>
+<h3 class="pt-3">What</h3>
+<p>Nivite (nerd + invite) which helps create awesome online invitations, for fun. Design, Build and Host your
+  invitation.</p>
+<h3 class="pt-3">How</h3>
+<div class="list-group">
+  <a *ngFor="let step of steps; let i=index;" [routerLink]="step.route" class="list-group-item list-group-item-action">
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">{{step.title}}</h5>
+      <small>{{i+1}}</small>
+    </div>
+    <p class="mb-1">{{step.description}}</p>
+    <small>{{step.note}}</small>
+  </a>
+</div>
