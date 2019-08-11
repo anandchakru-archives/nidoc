@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { AppService } from './services/app.service';
+import { BUILDINFO } from 'src/environments/buildinfo';
 
 @Component({
   selector: 'n3-root',
@@ -7,5 +8,6 @@ import { AppService } from './services/app.service';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+  buildinfo = BUILDINFO;
   constructor(public app: AppService) { }
 }

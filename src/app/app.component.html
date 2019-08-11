@@ -12,3 +12,9 @@
 <div class="container">
   <router-outlet></router-outlet>
 </div>
+
+<nav class="navbar fixed-bottom navbar-light bg-info">
+  <div class="version pointer text-dark small ml-auto">
+    {{buildinfo?.tag}}
+  </div>
+</nav>

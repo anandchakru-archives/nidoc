@@ -8,7 +8,7 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "deploy": "ng run nidoc:deploy --base-href=/nidoc/"
+    "deploy": "npm version patch && node ./config/buildinfo.js && ng run nidoc:deploy --base-href=/nidoc/"
   },
   "private": true,
   "dependencies": {
